@@ -1,0 +1,29 @@
+[2023-11-29T07:32:51.810+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: airflow_stores_pg_etl.download_dataset manual__2023-11-29T07:32:29.704045+00:00 [queued]>
+[2023-11-29T07:32:51.816+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: airflow_stores_pg_etl.download_dataset manual__2023-11-29T07:32:29.704045+00:00 [queued]>
+[2023-11-29T07:32:51.816+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-29T07:32:51.816+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-11-29T07:32:51.816+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-29T07:32:51.851+0000] {taskinstance.py:1300} INFO - Executing <Task(BashOperator): download_dataset> on 2023-11-29 07:32:29.704045+00:00
+[2023-11-29T07:32:51.855+0000] {standard_task_runner.py:55} INFO - Started process 32228 to run task
+[2023-11-29T07:32:51.858+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_stores_pg_etl', 'download_dataset', 'manual__2023-11-29T07:32:29.704045+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/kaggle_dag.py', '--cfg-path', '/tmp/tmp2_48jdp9']
+[2023-11-29T07:32:51.859+0000] {standard_task_runner.py:83} INFO - Job 13: Subtask download_dataset
+[2023-11-29T07:32:51.917+0000] {task_command.py:388} INFO - Running <TaskInstance: airflow_stores_pg_etl.download_dataset manual__2023-11-29T07:32:29.704045+00:00 [running]> on host codespaces-0b6ae8
+[2023-11-29T07:32:52.109+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=airflow_stores_pg_etl
+AIRFLOW_CTX_TASK_ID=download_dataset
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-29T07:32:29.704045+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-29T07:32:29.704045+00:00
+[2023-11-29T07:32:52.111+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-11-29T07:32:52.111+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'kaggle datasets download kzmontage/sales-from-different-stores -p /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dataset_temp']
+[2023-11-29T07:32:52.143+0000] {subprocess.py:86} INFO - Output:
+[2023-11-29T07:32:53.698+0000] {subprocess.py:93} INFO - Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/codespace/.kaggle/kaggle.json'
+[2023-11-29T07:32:53.698+0000] {subprocess.py:93} INFO - sales-from-different-stores.zip: Skipping, found more recently modified local copy (use --force to force download)
+[2023-11-29T07:32:53.723+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-11-29T07:32:53.764+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=airflow_stores_pg_etl, task_id=download_dataset, execution_date=20231129T073229, start_date=20231129T073251, end_date=20231129T073253
+[2023-11-29T07:32:53.851+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-11-29T07:32:53.876+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

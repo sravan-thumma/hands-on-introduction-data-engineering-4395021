@@ -1,0 +1,26 @@
+[2023-11-29T07:32:56.211+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: airflow_stores_pg_etl.check_datasetzip_exists manual__2023-11-29T07:32:29.704045+00:00 [queued]>
+[2023-11-29T07:32:56.216+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: airflow_stores_pg_etl.check_datasetzip_exists manual__2023-11-29T07:32:29.704045+00:00 [queued]>
+[2023-11-29T07:32:56.216+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-29T07:32:56.217+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-11-29T07:32:56.217+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-29T07:32:56.250+0000] {taskinstance.py:1300} INFO - Executing <Task(FileSensor): check_datasetzip_exists> on 2023-11-29 07:32:29.704045+00:00
+[2023-11-29T07:32:56.254+0000] {standard_task_runner.py:55} INFO - Started process 32309 to run task
+[2023-11-29T07:32:56.257+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_stores_pg_etl', 'check_datasetzip_exists', 'manual__2023-11-29T07:32:29.704045+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/kaggle_dag.py', '--cfg-path', '/tmp/tmpqp0olw_z']
+[2023-11-29T07:32:56.258+0000] {standard_task_runner.py:83} INFO - Job 14: Subtask check_datasetzip_exists
+[2023-11-29T07:32:56.312+0000] {task_command.py:388} INFO - Running <TaskInstance: airflow_stores_pg_etl.check_datasetzip_exists manual__2023-11-29T07:32:29.704045+00:00 [running]> on host codespaces-0b6ae8
+[2023-11-29T07:32:56.480+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=airflow_stores_pg_etl
+AIRFLOW_CTX_TASK_ID=check_datasetzip_exists
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-29T07:32:29.704045+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-29T07:32:29.704045+00:00
+[2023-11-29T07:32:56.483+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-11-29T07:32:56.484+0000] {filesystem.py:64} INFO - Poking for file /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dataset_temp/sales-from-different-stores.zip
+[2023-11-29T07:32:56.484+0000] {filesystem.py:69} INFO - Found File /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dataset_temp/sales-from-different-stores.zip last modified: 20231111182458
+[2023-11-29T07:32:56.484+0000] {base.py:228} INFO - Success criteria met. Exiting.
+[2023-11-29T07:32:56.490+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=airflow_stores_pg_etl, task_id=check_datasetzip_exists, execution_date=20231129T073229, start_date=20231129T073256, end_date=20231129T073256
+[2023-11-29T07:32:56.550+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-11-29T07:32:56.605+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

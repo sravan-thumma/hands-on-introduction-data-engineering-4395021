@@ -1,0 +1,26 @@
+[2023-11-29T07:33:01.573+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: airflow_stores_pg_etl.check_csv_file_exists manual__2023-11-29T07:32:29.704045+00:00 [queued]>
+[2023-11-29T07:33:01.579+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: airflow_stores_pg_etl.check_csv_file_exists manual__2023-11-29T07:32:29.704045+00:00 [queued]>
+[2023-11-29T07:33:01.579+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-29T07:33:01.579+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-11-29T07:33:01.579+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-29T07:33:01.612+0000] {taskinstance.py:1300} INFO - Executing <Task(FileSensor): check_csv_file_exists> on 2023-11-29 07:32:29.704045+00:00
+[2023-11-29T07:33:01.616+0000] {standard_task_runner.py:55} INFO - Started process 32370 to run task
+[2023-11-29T07:33:01.619+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_stores_pg_etl', 'check_csv_file_exists', 'manual__2023-11-29T07:32:29.704045+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/kaggle_dag.py', '--cfg-path', '/tmp/tmph3zjx_pl']
+[2023-11-29T07:33:01.621+0000] {standard_task_runner.py:83} INFO - Job 16: Subtask check_csv_file_exists
+[2023-11-29T07:33:01.685+0000] {task_command.py:388} INFO - Running <TaskInstance: airflow_stores_pg_etl.check_csv_file_exists manual__2023-11-29T07:32:29.704045+00:00 [running]> on host codespaces-0b6ae8
+[2023-11-29T07:33:01.856+0000] {taskinstance.py:1507} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=airflow_stores_pg_etl
+AIRFLOW_CTX_TASK_ID=check_csv_file_exists
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-29T07:32:29.704045+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-29T07:32:29.704045+00:00
+[2023-11-29T07:33:01.862+0000] {base.py:73} INFO - Using connection ID 'fs_default' for task execution.
+[2023-11-29T07:33:01.863+0000] {filesystem.py:64} INFO - Poking for file /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dataset_temp/Different_stores_dataset.csv
+[2023-11-29T07:33:01.863+0000] {filesystem.py:69} INFO - Found File /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dataset_temp/Different_stores_dataset.csv last modified: 20231111182456
+[2023-11-29T07:33:01.864+0000] {base.py:228} INFO - Success criteria met. Exiting.
+[2023-11-29T07:33:01.869+0000] {taskinstance.py:1318} INFO - Marking task as SUCCESS. dag_id=airflow_stores_pg_etl, task_id=check_csv_file_exists, execution_date=20231129T073229, start_date=20231129T073301, end_date=20231129T073301
+[2023-11-29T07:33:01.953+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-11-29T07:33:01.963+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

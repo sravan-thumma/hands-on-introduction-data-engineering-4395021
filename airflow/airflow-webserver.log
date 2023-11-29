@@ -1,0 +1,2 @@
+2023-11-29 06:34:33,100 ERROR - [0 / 0] Some workers seem to have died and gunicorn did not restart them as expected
+2023-11-29 06:45:35,405 ERROR - [0 / 0] Some workers seem to have died and gunicorn did not restart them as expected
